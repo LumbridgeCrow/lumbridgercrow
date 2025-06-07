@@ -39,25 +39,25 @@ function applyMerlotThemeOverrides(colors) {
     startAudio();
     document.addEventListener('click', startAudio);
     
-    // Header ribbon outer (span.ribbon-inner inside header and footer)
-    document.querySelectorAll('header span.ribbon-inner, footer span.ribbon-inner').forEach(el => {
-      el.style.backgroundColor = colors.bannerColor;
-    });
+    // // Header ribbon outer (span.ribbon-inner inside header and footer)
+    // document.querySelectorAll('header span.ribbon-inner, footer span.ribbon-inner').forEach(el => {
+    //   el.style.backgroundColor = colors.bannerColor;
+    // });
 
-    // Header H1 and H2
-    document.querySelectorAll('header h1, header h2').forEach(el => {
-      el.style.backgroundColor = colors.headerColor;
-    });
+    // // Header H1 and H2
+    // document.querySelectorAll('header h1, header h2').forEach(el => {
+    //   el.style.backgroundColor = colors.headerColor;
+    // });
 
-    // Optional: main content header levels
-    document.querySelectorAll('.header-level-1, .header-level-2').forEach(el => {
-      el.style.color = colors.headerColor;
-    });
+    // // Optional: main content header levels
+    // document.querySelectorAll('.header-level-1, .header-level-2').forEach(el => {
+    //   el.style.color = colors.headerColor;
+    // });
 
-    // Optional: links
-    document.querySelectorAll('a').forEach(el => {
-      el.style.color = colors.bannerColor;
-    });
+    // // Optional: links
+    // document.querySelectorAll('a').forEach(el => {
+    //   el.style.color = colors.bannerColor;
+    // });
   });
 }
 
