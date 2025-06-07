@@ -14,13 +14,13 @@ const themeColors = {
 
 function applyMerlotThemeOverrides(colors) {
   document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById("forkme_banner").style.display="none";
-    document.getElementsByClassName("right-tail")[0].style.display = "none";
-    document.getElementsByClassName("left-tail")[0].style.display = "none";
-    document.getElementsByClassName("inner")[0].style.display = "none";
-    // Background color and text color
-    document.body.style.backgroundColor = colors.backgroundColor;
-    document.body.style.color = colors.textColor;
+    // document.getElementById("forkme_banner").style.display="none";
+    // document.getElementsByClassName("right-tail")[0].style.display = "none";
+    // document.getElementsByClassName("left-tail")[0].style.display = "none";
+    // document.getElementsByClassName("inner")[0].style.display = "none";
+    // // Background color and text color
+    // document.body.style.backgroundColor = colors.backgroundColor;
+    // document.body.style.color = colors.textColor;
 
 
     const audio = document.createElement('audio');
