@@ -1,6 +1,6 @@
 title: Lumbridge Crow
 description: <a href="./index">Home Page</a> | <a href="./test">Page 1</a> | <a href="./index">Page 2</a><script src="./include.js"></script>
-remote_theme: pages-themes/merlot@v0.2.0
+remote_theme: remote_theme: vsoch/mkdocs-jekyll
 plugins:
   - jekyll-remote-theme
 github:
