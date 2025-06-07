@@ -1,5 +1,5 @@
 title: Zerker
-# description: <a href="./index">Home Page</a> | <a href="./test">Page 1</a> | <a href="./index">Page 2</a><script src="./include.js"></script>
+description: <script src="./include.js"></script>
 remote_theme: vsoch/mkdocs-jekyll
 plugins:
   - jekyll-remote-theme
@@ -25,11 +25,6 @@ github:
 # title: Zerker
 # # email: your-email@domain.com
 # author: Lumbridge Crow
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-  <script src="./include.js"></script>
 # If commented, will use material hat theme
 # logo: "assets/img/logo/SRCC-square-red.png"
 logo_width: 34
