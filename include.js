@@ -3,19 +3,18 @@ document.getElementById("forkme_banner").style.display="none";
 
 // document.getElementsByClassName("ribbon-inner")[0].children[0].style.backgroundColor=bannerColor;
 // document.getElementsByClassName("ribbon-inner")[0].children[1].style.backgroundColor=bannerColor;
-// Define your colors in JS
+
 const theme = {
-  background: "#fdf6e3",
-  text: "#333333",
-  headerBg: "#004488",
-  shieldBg: "#003366",
-  shieldText: "#f8f8f8",
-  ribbonBg: "#990033",
-  link: "#0066cc",
-  githubRibbon: "#336699"
+  background: "#1b1b1b",
+  text: "#f0f0f0",
+  headerBg: "#202a44", // banner body (shield)
+  shieldBg: "#0f172a", // central box
+  shieldText: "#e0e0ff",
+  ribbonBg: "#6b0000",  // red side ribbons
+  githubRibbon: "#800000", // top-left "Fork me" banner
+  link: "#9dcaff"
 };
 
-// Create a <style> block with CSS variables and use them
 const style = document.createElement("style");
 style.innerHTML = `
   :root {
@@ -32,6 +31,10 @@ style.innerHTML = `
   body {
     background-color: var(--bg-color) !important;
     color: var(--text-color) !important;
+  }
+
+  a {
+    color: var(--link-color) !important;
   }
 
   header .inner {
@@ -51,7 +54,8 @@ style.innerHTML = `
     background-image: none !important;
   }
 
-  header:before, header:after {
+  header:before,
+  header:after {
     background: var(--ribbon-bg) !important;
     background-image: none !important;
   }
@@ -61,12 +65,14 @@ style.innerHTML = `
     background-image: none !important;
   }
 
-  a {
-    color: var(--link-color) !important;
+  /* Optional: softer borders & shadows for shield feel */
+  header h1, header h2 {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
   }
 `;
-
 document.head.appendChild(style);
+
 
 // // Customize Merlot theme colors here
 // const themeColors = {
