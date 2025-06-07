@@ -3,46 +3,70 @@ document.getElementById("forkme_banner").style.display="none";
 
 // document.getElementsByClassName("ribbon-inner")[0].children[0].style.backgroundColor=bannerColor;
 // document.getElementsByClassName("ribbon-inner")[0].children[1].style.backgroundColor=bannerColor;
+// Define your colors in JS
+const theme = {
+  background: "#fdf6e3",
+  text: "#333333",
+  headerBg: "#004488",
+  shieldBg: "#003366",
+  shieldText: "#f8f8f8",
+  ribbonBg: "#990033",
+  link: "#0066cc",
+  githubRibbon: "#336699"
+};
+
+// Create a <style> block with CSS variables and use them
 const style = document.createElement("style");
 style.innerHTML = `
+  :root {
+    --bg-color: ${theme.background};
+    --text-color: ${theme.text};
+    --header-bg: ${theme.headerBg};
+    --shield-bg: ${theme.shieldBg};
+    --shield-text: ${theme.shieldText};
+    --ribbon-bg: ${theme.ribbonBg};
+    --link-color: ${theme.link};
+    --github-ribbon: ${theme.githubRibbon};
+  }
+
   body {
-    background-color: #fdf6e3 !important;
-    color: #333 !important;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
   }
 
   header .inner {
-    background: #004488 !important;
+    background: var(--header-bg) !important;
     background-image: none !important;
   }
 
   header h1, header h2 {
-    background: #003366 !important;
+    background: var(--shield-bg) !important;
     background-image: none !important;
-    color: #f8f8f8 !important;
+    color: var(--shield-text) !important;
   }
 
   header span.ribbon-inner,
   footer span.ribbon-inner {
-    background-color: #990033 !important;
+    background-color: var(--ribbon-bg) !important;
     background-image: none !important;
   }
 
   header:before, header:after {
-    background: #990033 !important;
+    background: var(--ribbon-bg) !important;
     background-image: none !important;
   }
 
   .ribbon {
-    background-color: #336699 !important;
+    background-color: var(--github-ribbon) !important;
     background-image: none !important;
   }
 
   a {
-    color: #0066cc !important;
+    color: var(--link-color) !important;
   }
 `;
-document.head.appendChild(style);
 
+document.head.appendChild(style);
 
 // // Customize Merlot theme colors here
 // const themeColors = {
