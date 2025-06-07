@@ -5,3 +5,9 @@ plugins:
   - jekyll-remote-theme
 github:
   is_project_page: false
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      css: "./theme.css"
