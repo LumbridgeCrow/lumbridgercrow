@@ -32,7 +32,7 @@ description: > # this means to ignore newlines until "baseurl:"
 # If commented, will use material hat theme
 # logo: "assets/img/logo/SRCC-square-red.png"
 logo_width: 34
-color: "#8c1515" # primary color for header, buttons
+color: "#242639" # primary color for header, buttons
 
 # Build settings
 # markdown: kramdown
