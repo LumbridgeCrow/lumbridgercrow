@@ -1,1 +1,1 @@
-console.log("get rekt noob!")
+document.getElementById("forkme_banner").style.display="none";
