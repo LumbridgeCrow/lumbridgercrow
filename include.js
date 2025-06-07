@@ -14,7 +14,7 @@ const themeColors = {
 
 function applyMerlotThemeOverrides(colors) {
   document.addEventListener('DOMContentLoaded', () => {
-    // document.getElementById("forkme_banner").style.display="none";
+    document.getElementById("forkme_banner").style.display="none";
     // document.getElementsByClassName("right-tail")[0].style.display = "none";
     // document.getElementsByClassName("left-tail")[0].style.display = "none";
     // document.getElementsByClassName("inner")[0].style.display = "none";
