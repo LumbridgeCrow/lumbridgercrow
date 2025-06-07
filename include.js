@@ -3,6 +3,45 @@ document.getElementById("forkme_banner").style.display="none";
 
 // document.getElementsByClassName("ribbon-inner")[0].children[0].style.backgroundColor=bannerColor;
 // document.getElementsByClassName("ribbon-inner")[0].children[1].style.backgroundColor=bannerColor;
+const style = document.createElement("style");
+style.innerHTML = `
+  body {
+    background-color: #fdf6e3 !important;
+    color: #333 !important;
+  }
+
+  header .inner {
+    background: #004488 !important;
+    background-image: none !important;
+  }
+
+  header h1, header h2 {
+    background: #003366 !important;
+    background-image: none !important;
+    color: #f8f8f8 !important;
+  }
+
+  header span.ribbon-inner,
+  footer span.ribbon-inner {
+    background-color: #990033 !important;
+    background-image: none !important;
+  }
+
+  header:before, header:after {
+    background: #990033 !important;
+    background-image: none !important;
+  }
+
+  .ribbon {
+    background-color: #336699 !important;
+    background-image: none !important;
+  }
+
+  a {
+    color: #0066cc !important;
+  }
+`;
+document.head.appendChild(style);
 
 
 // // Customize Merlot theme colors here
