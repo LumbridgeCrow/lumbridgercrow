@@ -1,1 +1,1 @@
-alert("get rekt noob!")
+console.log("get rekt noob!")
