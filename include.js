@@ -8,7 +8,7 @@
 const themeColors = {
   bannerColor: '#0066cc',     // Example: blue banner
   headerColor: '#003366',     // Example: darker blue header background
-  backgroundColor: '#fdf6e3', // Example: solarized light background
+  backgroundColor: '#494035', // Example: solarized light background
   textColor: '#333333'        // Example: dark gray text
 };
 
